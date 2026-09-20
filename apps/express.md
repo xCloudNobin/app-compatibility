@@ -3,7 +3,7 @@
 - Action: **upgrade**
 - Current source: https://github.com/xCloudNobin/deploy-test-express
 - Planned canonical repository: `xCloudNobin/deploy-test-express`
-- Current source visibility: private
+- Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 
 ## Implementation brief

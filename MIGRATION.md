@@ -1,12 +1,12 @@
 # Ownership and publication
 
-All canonical apps are intended to live under `xCloudNobin`. Nobin plans to perform transfers; this parent repo does not imply they have happened. Keep existing names initially to avoid unnecessary churn.
+All canonical apps are intended to live under `xCloudNobin`. Transfers with the destination names below were requested via GitHub API on 2026-09-20. Source repositories still resolve under neobuilds; destination ownership and renames are not yet verified. Recipient acceptance may be required. Do not create competing destination repositories.
 
 ## Canonical sources to transfer
 
-- [ ] `neobuilds/mcp-qa-laravel` → `xCloudNobin/mcp-qa-laravel`
-- [ ] `neobuilds/mcpqa-react-vite` → `xCloudNobin/mcpqa-react-vite`
-- [ ] `neobuilds/mcpqa-tanstack-start` → `xCloudNobin/mcpqa-tanstack-start`
+- [ ] `neobuilds/mcp-qa-laravel` → `xCloudNobin/laravel-taskboard`
+- [ ] `neobuilds/mcpqa-react-vite` → `xCloudNobin/react-taskboard`
+- [ ] `neobuilds/mcpqa-tanstack-start` → `xCloudNobin/tanstack-taskboard`
 
 ## Checklist for each existing app
 

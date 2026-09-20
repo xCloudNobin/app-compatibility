@@ -3,7 +3,7 @@
 - Action: **upgrade**
 - Current source: https://github.com/xCloudNobin/deploy-test-flask
 - Planned canonical repository: `xCloudNobin/deploy-test-flask`
-- Current source visibility: private
+- Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 
 ## Implementation brief

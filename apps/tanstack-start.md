@@ -2,8 +2,8 @@
 
 - Action: **upgrade**
 - Current source: https://github.com/neobuilds/mcpqa-tanstack-start
-- Planned canonical repository: `xCloudNobin/mcpqa-tanstack-start`
-- Current source visibility: private
+- Planned canonical repository: `xCloudNobin/tanstack-taskboard`
+- Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 
 ## Implementation brief

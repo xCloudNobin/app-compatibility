@@ -3,7 +3,7 @@
 - Action: **upgrade**
 - Current source: https://github.com/xCloudNobin/deploy-test-dockerfile
 - Planned canonical repository: `xCloudNobin/deploy-test-dockerfile`
-- Current source visibility: private
+- Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 
 ## Implementation brief

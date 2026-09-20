@@ -4,7 +4,7 @@
 
 - [x] Agree one meaningful public app per type; separate GitHub auth testing.
 - [x] Document 24 canonical targets, source inventory, shared acceptance and agent briefs.
-- [ ] Nobin transfers the three canonical neobuilds sources listed in MIGRATION.md.
+- [ ] Complete the three initiated transfers in MIGRATION.md; destination ownership/renaming awaits verification.
 - [ ] Review history/license/security and approve publication of each existing private canonical app.
 - [ ] Confirm runtime versions and supported native deployment settings before each implementation.
 
@@ -12,7 +12,7 @@
 
 Every checkbox below means implementation AND review AND real platform qualification, not simply repository creation. All begin unverified.
 
-- [ ] **Laravel** — upgrade [`xCloudNobin/mcp-qa-laravel`](https://github.com/xCloudNobin/mcp-qa-laravel); [brief](apps/laravel.md).
+- [ ] **Laravel** — upgrade [`xCloudNobin/laravel-taskboard`](https://github.com/xCloudNobin/laravel-taskboard); [brief](apps/laravel.md).
 - [ ] **Bun (native)** — create [`xCloudNobin/deploy-test-bun`](https://github.com/xCloudNobin/deploy-test-bun); [brief](apps/bun.md).
 - [ ] **Django** — create [`xCloudNobin/deploy-test-django`](https://github.com/xCloudNobin/deploy-test-django); [brief](apps/django.md).
 - [ ] **Elysia** — create [`xCloudNobin/deploy-test-elysia`](https://github.com/xCloudNobin/deploy-test-elysia); [brief](apps/elysia.md).
@@ -31,9 +31,9 @@ Every checkbox below means implementation AND review AND real platform qualifica
 - [ ] **Rails** — create [`xCloudNobin/deploy-test-rails`](https://github.com/xCloudNobin/deploy-test-rails); [brief](apps/rails.md).
 - [ ] **Python / WSGI (plain)** — create [`xCloudNobin/deploy-test-python-wsgi`](https://github.com/xCloudNobin/deploy-test-python-wsgi); [brief](apps/python-wsgi.md).
 - [ ] **Astro** — upgrade [`xCloudNobin/deploy-test-astro`](https://github.com/xCloudNobin/deploy-test-astro); [brief](apps/astro.md).
-- [ ] **React + Vite** — upgrade [`xCloudNobin/mcpqa-react-vite`](https://github.com/xCloudNobin/mcpqa-react-vite); [brief](apps/react-vite.md).
+- [ ] **React + Vite** — upgrade [`xCloudNobin/react-taskboard`](https://github.com/xCloudNobin/react-taskboard); [brief](apps/react-vite.md).
 - [ ] **Next.js** — upgrade [`xCloudNobin/supabase-guestbook`](https://github.com/xCloudNobin/supabase-guestbook); [brief](apps/nextjs.md).
-- [ ] **TanStack Start** — upgrade [`xCloudNobin/mcpqa-tanstack-start`](https://github.com/xCloudNobin/mcpqa-tanstack-start); [brief](apps/tanstack-start.md).
+- [ ] **TanStack Start** — upgrade [`xCloudNobin/tanstack-taskboard`](https://github.com/xCloudNobin/tanstack-taskboard); [brief](apps/tanstack-start.md).
 - [ ] **Dockerfile deployment** — upgrade [`xCloudNobin/deploy-test-dockerfile`](https://github.com/xCloudNobin/deploy-test-dockerfile); [brief](apps/dockerfile.md).
 - [ ] **Docker Compose deployment** — upgrade [`xCloudNobin/deploy-test-docker-compose`](https://github.com/xCloudNobin/deploy-test-docker-compose); [brief](apps/docker-compose.md).
 

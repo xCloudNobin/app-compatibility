@@ -3,7 +3,7 @@
 - Action: **upgrade**
 - Current source: https://github.com/xCloudNobin/deploy-test-go
 - Planned canonical repository: `xCloudNobin/deploy-test-go`
-- Current source visibility: private
+- Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 
 ## Implementation brief

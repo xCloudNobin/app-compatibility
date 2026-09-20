@@ -2,7 +2,7 @@
 
 - Action: **upgrade**
 - Current source: https://github.com/neobuilds/mcpqa-react-vite
-- Planned canonical repository: `xCloudNobin/mcpqa-react-vite`
+- Planned canonical repository: `xCloudNobin/react-taskboard`
 - Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 

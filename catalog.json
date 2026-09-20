@@ -4,12 +4,13 @@
     "name": "Laravel",
     "group": "screenshot",
     "source_repo": "neobuilds/mcp-qa-laravel",
-    "target_repo": "xCloudNobin/mcp-qa-laravel",
+    "target_repo": "xCloudNobin/laravel-taskboard",
     "action": "upgrade",
     "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
-    "brief": "apps/laravel.md"
+    "brief": "apps/laravel.md",
+    "transfer_status": "requested-not-verified"
   },
   {
     "id": "bun",
@@ -54,7 +55,7 @@
     "source_repo": "xCloudNobin/deploy-test-express",
     "target_repo": "xCloudNobin/deploy-test-express",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
     "brief": "apps/express.md"
@@ -66,7 +67,7 @@
     "source_repo": "xCloudNobin/deploy-test-flask",
     "target_repo": "xCloudNobin/deploy-test-flask",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
     "brief": "apps/flask.md"
@@ -78,7 +79,7 @@
     "source_repo": "xCloudNobin/deploy-test-go",
     "target_repo": "xCloudNobin/deploy-test-go",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
     "brief": "apps/go.md"
@@ -222,7 +223,7 @@
     "source_repo": "xCloudNobin/deploy-test-astro",
     "target_repo": "xCloudNobin/deploy-test-astro",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
     "brief": "apps/astro.md"
@@ -232,12 +233,13 @@
     "name": "React + Vite",
     "group": "additional",
     "source_repo": "neobuilds/mcpqa-react-vite",
-    "target_repo": "xCloudNobin/mcpqa-react-vite",
+    "target_repo": "xCloudNobin/react-taskboard",
     "action": "upgrade",
     "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
-    "brief": "apps/react-vite.md"
+    "brief": "apps/react-vite.md",
+    "transfer_status": "requested-not-verified"
   },
   {
     "id": "nextjs",
@@ -256,12 +258,13 @@
     "name": "TanStack Start",
     "group": "additional",
     "source_repo": "neobuilds/mcpqa-tanstack-start",
-    "target_repo": "xCloudNobin/mcpqa-tanstack-start",
+    "target_repo": "xCloudNobin/tanstack-taskboard",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
-    "brief": "apps/tanstack-start.md"
+    "brief": "apps/tanstack-start.md",
+    "transfer_status": "requested-not-verified"
   },
   {
     "id": "dockerfile",
@@ -270,7 +273,7 @@
     "source_repo": "xCloudNobin/deploy-test-dockerfile",
     "target_repo": "xCloudNobin/deploy-test-dockerfile",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
     "brief": "apps/dockerfile.md"
@@ -282,7 +285,7 @@
     "source_repo": "xCloudNobin/deploy-test-docker-compose",
     "target_repo": "xCloudNobin/deploy-test-docker-compose",
     "action": "upgrade",
-    "source_visibility": "private",
+    "source_visibility": "public",
     "status": "not-started",
     "deployment_verified": false,
     "brief": "apps/docker-compose.md"

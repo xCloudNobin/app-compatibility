@@ -2,7 +2,7 @@
 
 - Action: **upgrade**
 - Current source: https://github.com/neobuilds/mcp-qa-laravel
-- Planned canonical repository: `xCloudNobin/mcp-qa-laravel`
+- Planned canonical repository: `xCloudNobin/laravel-taskboard`
 - Current source visibility: public
 - Initial status: **not-started; deployment not verified**
 

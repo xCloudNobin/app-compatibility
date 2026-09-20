@@ -10,7 +10,7 @@ This is the **parent documentation and coordination repository**, not a monorepo
 - 10 existing starting points to upgrade; 14 new apps to create.
 - One app per type. No simple/complex or public/private duplicates.
 - Dockerfile and Docker Compose are dedicated deployment-method fixtures, not extra framework variants.
-- Public source with an explicit open-source license. Existing private repositories stay private until their full history and content have been reviewed.
+- Public source with an explicit open-source license. The seven previously private canonical sources were made public after a Gitleaks full-history scan and a targeted content review on 2026-09-20. This is not a guarantee that automated scanning detects every issue. Child-app license work remains pending.
 - Existing repositories are starting points, **not freshly certified deployments**. A source inventory is not a test result.
 
 ## Start here
@@ -32,9 +32,9 @@ Source ownership and visibility checked on 2026-09-20. Target repository names a
 | Bun (native) | Not created | Planned public | [create](apps/bun.md) |
 | Django | Not created | Planned public | [create](apps/django.md) |
 | Elysia | Not created | Planned public | [create](apps/elysia.md) |
-| Express | [xCloudNobin/deploy-test-express](https://github.com/xCloudNobin/deploy-test-express) | private | [upgrade](apps/express.md) |
-| Flask | [xCloudNobin/deploy-test-flask](https://github.com/xCloudNobin/deploy-test-flask) | private | [upgrade](apps/flask.md) |
-| Go | [xCloudNobin/deploy-test-go](https://github.com/xCloudNobin/deploy-test-go) | private | [upgrade](apps/go.md) |
+| Express | [xCloudNobin/deploy-test-express](https://github.com/xCloudNobin/deploy-test-express) | public | [upgrade](apps/express.md) |
+| Flask | [xCloudNobin/deploy-test-flask](https://github.com/xCloudNobin/deploy-test-flask) | public | [upgrade](apps/flask.md) |
+| Go | [xCloudNobin/deploy-test-go](https://github.com/xCloudNobin/deploy-test-go) | public | [upgrade](apps/go.md) |
 | Hono | Not created | Planned public | [create](apps/hono.md) |
 | Java (plain) | Not created | Planned public | [create](apps/java.md) |
 | Spring Boot | Not created | Planned public | [create](apps/spring-boot.md) |
@@ -46,12 +46,12 @@ Source ownership and visibility checked on 2026-09-20. Target repository names a
 | Ruby / Rack | Not created | Planned public | [create](apps/ruby-rack.md) |
 | Rails | Not created | Planned public | [create](apps/rails.md) |
 | Python / WSGI (plain) | Not created | Planned public | [create](apps/python-wsgi.md) |
-| Astro | [xCloudNobin/deploy-test-astro](https://github.com/xCloudNobin/deploy-test-astro) | private | [upgrade](apps/astro.md) |
+| Astro | [xCloudNobin/deploy-test-astro](https://github.com/xCloudNobin/deploy-test-astro) | public | [upgrade](apps/astro.md) |
 | React + Vite | [neobuilds/mcpqa-react-vite](https://github.com/neobuilds/mcpqa-react-vite) | public | [upgrade](apps/react-vite.md) |
 | Next.js | [xCloudNobin/supabase-guestbook](https://github.com/xCloudNobin/supabase-guestbook) | public | [upgrade](apps/nextjs.md) |
-| TanStack Start | [neobuilds/mcpqa-tanstack-start](https://github.com/neobuilds/mcpqa-tanstack-start) | private | [upgrade](apps/tanstack-start.md) |
-| Dockerfile deployment | [xCloudNobin/deploy-test-dockerfile](https://github.com/xCloudNobin/deploy-test-dockerfile) | private | [upgrade](apps/dockerfile.md) |
-| Docker Compose deployment | [xCloudNobin/deploy-test-docker-compose](https://github.com/xCloudNobin/deploy-test-docker-compose) | private | [upgrade](apps/docker-compose.md) |
+| TanStack Start | [neobuilds/mcpqa-tanstack-start](https://github.com/neobuilds/mcpqa-tanstack-start) | public | [upgrade](apps/tanstack-start.md) |
+| Dockerfile deployment | [xCloudNobin/deploy-test-dockerfile](https://github.com/xCloudNobin/deploy-test-dockerfile) | public | [upgrade](apps/dockerfile.md) |
+| Docker Compose deployment | [xCloudNobin/deploy-test-docker-compose](https://github.com/xCloudNobin/deploy-test-docker-compose) | public | [upgrade](apps/docker-compose.md) |
 
 ## Design
 
