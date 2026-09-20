@@ -230,10 +230,12 @@
     "target_repo": "xCloudNobin/deploy-test-astro",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "in-progress",
+    "status": "local-verified",
     "deployment_verified": false,
     "brief": "apps/astro.md",
-    "worker_model": "opencode-go/deepseek-v4-flash"
+    "worker_model": "opencode-go/deepseek-v4-flash",
+    "implementation_status": "draft-pr",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-astro/pull/1"
   },
   {
     "id": "react-vite",
@@ -281,10 +283,12 @@
     "target_repo": "xCloudNobin/deploy-test-dockerfile",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "in-progress",
+    "status": "local-verified",
     "deployment_verified": false,
     "brief": "apps/dockerfile.md",
-    "worker_model": "opencode-go/deepseek-v4-flash"
+    "worker_model": "opencode-go/deepseek-v4-flash",
+    "implementation_status": "draft-pr",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-dockerfile/pull/1"
   },
   {
     "id": "docker-compose",
@@ -294,9 +298,11 @@
     "target_repo": "xCloudNobin/deploy-test-docker-compose",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "in-progress",
+    "status": "local-verified",
     "deployment_verified": false,
     "brief": "apps/docker-compose.md",
-    "worker_model": "opencode-go/deepseek-v4-flash"
+    "worker_model": "opencode-go/deepseek-v4-flash",
+    "implementation_status": "draft-pr",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-docker-compose/pull/1"
   }
 ]

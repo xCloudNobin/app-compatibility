@@ -57,6 +57,6 @@ Every checkbox below means implementation AND review AND real platform qualifica
 ## Implementation progress
 
 - Express, Flask and Go: PR #1 in each app repository merged on 2026-09-20 after owner authorization. Local tests and production smoke checks rerun by coordinator. Live xCloud qualification remains pending; completion checkboxes above stay open.
-- Astro, Dockerfile and Docker Compose: DeepSeek V4 Flash workers started via OpenCode; implementation and draft PRs in progress. No automatic merge or live provisioning.
+- Astro, Dockerfile and Docker Compose: draft PR #1 delivered in each repository; coordinator reran local checks successfully. Astro: typecheck/build, 10 unit tests and 47 browser/HTTP smoke checks. Dockerfile: 17 tests and 48 container checks. Compose: build, smoke, full-stack recreate persistence and database outage/recovery passed. Container builds required a build-only host-network workaround; Compose used the per-command default builder. Live xCloud qualification and merge remain pending.
 - Flask verification document has a stale test count (34 vs actual 35); correct in a follow-up.
 
