@@ -54,4 +54,9 @@ Every checkbox below means implementation AND review AND real platform qualifica
 - [ ] Create/select one separate private auth fixture and run AUTH-TESTS.md.
 - [ ] Reconcile catalog, README and this checklist after ownership/status changes.
 
-No app creation agents have been launched by this initial documentation setup.
+## Implementation progress
+
+- Express, Flask and Go: PR #1 in each app repository merged on 2026-09-20 after owner authorization. Local tests and production smoke checks rerun by coordinator. Live xCloud qualification remains pending; completion checkboxes above stay open.
+- Astro, Dockerfile and Docker Compose: DeepSeek V4 Flash workers started via OpenCode; implementation and draft PRs in progress. No automatic merge or live provisioning.
+- Flask verification document has a stale test count (34 vs actual 35); correct in a follow-up.
+

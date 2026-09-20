@@ -56,9 +56,11 @@
     "target_repo": "xCloudNobin/deploy-test-express",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/express.md"
+    "brief": "apps/express.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-express/pull/1"
   },
   {
     "id": "flask",
@@ -68,9 +70,11 @@
     "target_repo": "xCloudNobin/deploy-test-flask",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/flask.md"
+    "brief": "apps/flask.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-flask/pull/1"
   },
   {
     "id": "go",
@@ -80,9 +84,11 @@
     "target_repo": "xCloudNobin/deploy-test-go",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/go.md"
+    "brief": "apps/go.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-go/pull/1"
   },
   {
     "id": "hono",
@@ -224,9 +230,10 @@
     "target_repo": "xCloudNobin/deploy-test-astro",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "in-progress",
     "deployment_verified": false,
-    "brief": "apps/astro.md"
+    "brief": "apps/astro.md",
+    "worker_model": "opencode-go/deepseek-v4-flash"
   },
   {
     "id": "react-vite",
@@ -274,9 +281,10 @@
     "target_repo": "xCloudNobin/deploy-test-dockerfile",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "in-progress",
     "deployment_verified": false,
-    "brief": "apps/dockerfile.md"
+    "brief": "apps/dockerfile.md",
+    "worker_model": "opencode-go/deepseek-v4-flash"
   },
   {
     "id": "docker-compose",
@@ -286,8 +294,9 @@
     "target_repo": "xCloudNobin/deploy-test-docker-compose",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "in-progress",
     "deployment_verified": false,
-    "brief": "apps/docker-compose.md"
+    "brief": "apps/docker-compose.md",
+    "worker_model": "opencode-go/deepseek-v4-flash"
   }
 ]
