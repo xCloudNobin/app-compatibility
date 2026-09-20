@@ -3,50 +3,61 @@
     "id": "laravel",
     "name": "Laravel",
     "group": "screenshot",
-    "source_repo": "neobuilds/mcp-qa-laravel",
+    "source_repo": "xCloudNobin/laravel-taskboard",
     "target_repo": "xCloudNobin/laravel-taskboard",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
     "brief": "apps/laravel.md",
-    "transfer_status": "requested-not-verified"
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/laravel-taskboard/pull/1",
+    "merge_sha": "99b72fdce135d42ee7e7a20a98b243aab0d327ce"
   },
   {
     "id": "bun",
     "name": "Bun (native)",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-bun",
     "target_repo": "xCloudNobin/deploy-test-bun",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/bun.md"
+    "brief": "apps/bun.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-bun/pull/1",
+    "merge_sha": "57961e466760ea23a53934c0e2f5b2f05902d961"
   },
   {
     "id": "django",
     "name": "Django",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-django",
     "target_repo": "xCloudNobin/deploy-test-django",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/django.md"
+    "brief": "apps/django.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-django/pull/1",
+    "merge_sha": "c410010f6da0373868913e3b3ae5bd0b4a962fda"
   },
   {
     "id": "elysia",
     "name": "Elysia",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-elysia",
     "target_repo": "xCloudNobin/deploy-test-elysia",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/elysia.md"
+    "brief": "apps/elysia.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-elysia/pull/1",
+    "merge_sha": "4f09a32551aa4477707200d8aeec8c61742566c3"
   },
   {
     "id": "express",
@@ -60,7 +71,8 @@
     "deployment_verified": false,
     "brief": "apps/express.md",
     "implementation_status": "merged",
-    "pull_request": "https://github.com/xCloudNobin/deploy-test-express/pull/1"
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-express/pull/1",
+    "merge_sha": "d9bab49417141d2060493a891064229713c65b9e"
   },
   {
     "id": "flask",
@@ -74,7 +86,8 @@
     "deployment_verified": false,
     "brief": "apps/flask.md",
     "implementation_status": "merged",
-    "pull_request": "https://github.com/xCloudNobin/deploy-test-flask/pull/1"
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-flask/pull/1",
+    "merge_sha": "0c984453a076129691b0d6c20e2b899b804c2cae"
   },
   {
     "id": "go",
@@ -88,139 +101,174 @@
     "deployment_verified": false,
     "brief": "apps/go.md",
     "implementation_status": "merged",
-    "pull_request": "https://github.com/xCloudNobin/deploy-test-go/pull/1"
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-go/pull/1",
+    "merge_sha": "5994abeafcf85543c40dc9ffb666444e684640de"
   },
   {
     "id": "hono",
     "name": "Hono",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-hono",
     "target_repo": "xCloudNobin/deploy-test-hono",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/hono.md"
+    "brief": "apps/hono.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-hono/pull/1",
+    "merge_sha": "84e105b85bdd6d9b52ea40ef5047be990aaa2bf3"
   },
   {
     "id": "java",
     "name": "Java (plain)",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-java",
     "target_repo": "xCloudNobin/deploy-test-java",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/java.md"
+    "brief": "apps/java.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-java/pull/1",
+    "merge_sha": "de7b6980fd8046de3c187ec0afd468a41ead0011"
   },
   {
     "id": "spring-boot",
     "name": "Spring Boot",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-spring-boot",
     "target_repo": "xCloudNobin/deploy-test-spring-boot",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/spring-boot.md"
+    "brief": "apps/spring-boot.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-spring-boot/pull/1",
+    "merge_sha": "e848564207a0413b00f337f6432941fbadd27bd9"
   },
   {
     "id": "nodejs",
     "name": "Node.js (plain)",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-nodejs",
     "target_repo": "xCloudNobin/deploy-test-nodejs",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/nodejs.md"
+    "brief": "apps/nodejs.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-nodejs/pull/1",
+    "merge_sha": "8a066dfa221433e8b5a6f4732e4cf33e1fd4f33d"
   },
   {
     "id": "nestjs",
     "name": "NestJS",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-nestjs",
     "target_repo": "xCloudNobin/deploy-test-nestjs",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/nestjs.md"
+    "brief": "apps/nestjs.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-nestjs/pull/1",
+    "merge_sha": "5ab983903affc0d043946e17d8874fe938826bce"
   },
   {
     "id": "nuxt",
     "name": "Nuxt",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-nuxt",
     "target_repo": "xCloudNobin/deploy-test-nuxt",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/nuxt.md"
+    "brief": "apps/nuxt.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-nuxt/pull/1",
+    "merge_sha": "47254bc54dc7b6365548de83632d23e39ae61147"
   },
   {
     "id": "php",
     "name": "PHP (plain)",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-php",
     "target_repo": "xCloudNobin/deploy-test-php",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/php.md"
+    "brief": "apps/php.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-php/pull/1",
+    "merge_sha": "fb19bc53a2f42daefc4be0cbe32f6fcaa1bf10cd"
   },
   {
     "id": "fastapi",
     "name": "FastAPI",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-fastapi",
     "target_repo": "xCloudNobin/deploy-test-fastapi",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/fastapi.md"
+    "brief": "apps/fastapi.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-fastapi/pull/1",
+    "merge_sha": "d5b126e65cdeb8b5b0027a3afb0728dcff30b82b"
   },
   {
     "id": "ruby-rack",
     "name": "Ruby / Rack",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-ruby-rack",
     "target_repo": "xCloudNobin/deploy-test-ruby-rack",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/ruby-rack.md"
+    "brief": "apps/ruby-rack.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-ruby-rack/pull/1",
+    "merge_sha": "5e43cdc63732cab0cc84ffc836165fbe974c7243"
   },
   {
     "id": "rails",
     "name": "Rails",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-rails",
     "target_repo": "xCloudNobin/deploy-test-rails",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/rails.md"
+    "brief": "apps/rails.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-rails/pull/1",
+    "merge_sha": "f0be46be10181138a8b9bf0551843fdc7b3c8b2f",
+    "verification": "./scripts/verify.sh: 34 tests plus production Puma, login/session, CRUD, DB job and restart persistence passed"
   },
   {
     "id": "python-wsgi",
     "name": "Python / WSGI (plain)",
     "group": "screenshot",
-    "source_repo": null,
+    "source_repo": "xCloudNobin/deploy-test-python-wsgi",
     "target_repo": "xCloudNobin/deploy-test-python-wsgi",
     "action": "create",
-    "source_visibility": null,
-    "status": "not-started",
+    "source_visibility": "public",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/python-wsgi.md"
+    "brief": "apps/python-wsgi.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-python-wsgi/pull/1",
+    "merge_sha": "85361b94d1c1187cca7d6e011f690be466599093"
   },
   {
     "id": "astro",
@@ -234,8 +282,9 @@
     "deployment_verified": false,
     "brief": "apps/astro.md",
     "worker_model": "opencode-go/deepseek-v4-flash",
-    "implementation_status": "draft-pr",
-    "pull_request": "https://github.com/xCloudNobin/deploy-test-astro/pull/1"
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-astro/pull/1",
+    "merge_sha": "a099a08d5d3ba05a5219ba728fd6f824c2c9ff7e"
   },
   {
     "id": "react-vite",
@@ -245,10 +294,13 @@
     "target_repo": "xCloudNobin/react-taskboard",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
     "brief": "apps/react-vite.md",
-    "transfer_status": "requested-not-verified"
+    "transfer_status": "pending-recipient-resolution",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/neobuilds/mcpqa-react-vite/pull/1",
+    "merge_sha": "8d2c1515924b17ab8abba59a0277b4f41e3985b7"
   },
   {
     "id": "nextjs",
@@ -258,22 +310,29 @@
     "target_repo": "xCloudNobin/supabase-guestbook",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
-    "brief": "apps/nextjs.md"
+    "brief": "apps/nextjs.md",
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/supabase-guestbook/pull/1",
+    "merge_sha": "f1d19817a85f82dcdf807bed065c1e0874378c19",
+    "verification": "scripts/verify.sh: real Supabase CRUD, validation, SSR, readiness, schema/RLS and restart persistence; host production verified; Docker app image build blocked by BuildKit registry DNS"
   },
   {
     "id": "tanstack-start",
     "name": "TanStack Start",
     "group": "additional",
-    "source_repo": "neobuilds/mcpqa-tanstack-start",
+    "source_repo": "xCloudNobin/tanstack-taskboard",
     "target_repo": "xCloudNobin/tanstack-taskboard",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "not-started",
+    "status": "local-verified",
     "deployment_verified": false,
     "brief": "apps/tanstack-start.md",
-    "transfer_status": "requested-not-verified"
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/tanstack-taskboard/pull/1",
+    "merge_sha": "3231757d1d2390bd0cb8633ed870a5dc295e9172",
+    "verification": "scripts/verify.sh: 27 checks passed including production SSR, health/readiness, CRUD/error cases and SQLite restart persistence"
   },
   {
     "id": "dockerfile",
@@ -287,8 +346,9 @@
     "deployment_verified": false,
     "brief": "apps/dockerfile.md",
     "worker_model": "opencode-go/deepseek-v4-flash",
-    "implementation_status": "draft-pr",
-    "pull_request": "https://github.com/xCloudNobin/deploy-test-dockerfile/pull/1"
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-dockerfile/pull/1",
+    "merge_sha": "303d80f3f892109bb0721ea62bd1fc4cfd8a1cbb"
   },
   {
     "id": "docker-compose",
@@ -302,7 +362,8 @@
     "deployment_verified": false,
     "brief": "apps/docker-compose.md",
     "worker_model": "opencode-go/deepseek-v4-flash",
-    "implementation_status": "draft-pr",
-    "pull_request": "https://github.com/xCloudNobin/deploy-test-docker-compose/pull/1"
+    "implementation_status": "merged",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-docker-compose/pull/1",
+    "merge_sha": "8c0f627b38a4a08ec6c69dbae7fb620515c5bab2"
   }
 ]

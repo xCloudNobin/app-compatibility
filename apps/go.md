@@ -4,7 +4,7 @@
 - Current source: https://github.com/xCloudNobin/deploy-test-go
 - Planned canonical repository: `xCloudNobin/deploy-test-go`
 - Current source visibility: public
-- Initial status: **not-started; deployment not verified**
+- Status: **implementation merged; local verification recorded; live xCloud not verified**
 
 ## Implementation brief
 
@@ -23,3 +23,11 @@ Implement the shared meaningful-app baseline: UI, validated CRUD, persistent sto
 - [ ] Separate live xCloud qualification using the intended category before marking deployment verified.
 
 Read [ACCEPTANCE.md](../ACCEPTANCE.md) and [AGENTS.md](../AGENTS.md). Return evidence and blockers to the coordinator; do not self-merge or change repository visibility.
+
+## Delivered implementation
+
+Current source: https://github.com/xCloudNobin/deploy-test-go
+
+Merged PR: https://github.com/xCloudNobin/deploy-test-go/pull/1
+
+See [completion ledger](../COMPLETION.md) for outstanding qualification and ownership details.

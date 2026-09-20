@@ -1,5 +1,7 @@
 # xCloud App Compatibility Suite
 
+**Implementation status: 24/24 merged.** See [completion ledger](COMPLETION.md) for current repository links, merged PRs and limitations. React ownership transfer and live xCloud qualification remain pending. Historical planning inventory below is superseded by that ledger. 
+
 One meaningful, open-source application per deployment target. The goal is to establish application compatibility, not merely prove that a homepage responds or GitHub authentication works.
 
 This is the **parent documentation and coordination repository**, not a monorepo. Application code lives in separate repositories under `xCloudNobin`. No submodules are required.
@@ -24,7 +26,7 @@ This is the **parent documentation and coordination repository**, not a monorepo
 
 ## Inventory
 
-Source ownership and visibility checked on 2026-09-20. Target repository names are planned destinations, not claims that transfers or creation have happened. Status in `catalog.json` starts at `not-started` for every app.
+Source ownership and visibility checked on 2026-09-20. Implementation status and local evidence are recorded in `catalog.json`; live xCloud deployment remains separately unverified.
 
 | Target | Current source | Visibility | Work / brief |
 |---|---|---|---|
@@ -44,12 +46,12 @@ Source ownership and visibility checked on 2026-09-20. Target repository names a
 | PHP (plain) | Not created | Planned public | [create](apps/php.md) |
 | FastAPI | Not created | Planned public | [create](apps/fastapi.md) |
 | Ruby / Rack | Not created | Planned public | [create](apps/ruby-rack.md) |
-| Rails | Not created | Planned public | [create](apps/rails.md) |
+| Rails | [xCloudNobin/deploy-test-rails](https://github.com/xCloudNobin/deploy-test-rails) | public | [create](apps/rails.md) |
 | Python / WSGI (plain) | Not created | Planned public | [create](apps/python-wsgi.md) |
 | Astro | [xCloudNobin/deploy-test-astro](https://github.com/xCloudNobin/deploy-test-astro) | public | [upgrade](apps/astro.md) |
-| React + Vite | [neobuilds/mcpqa-react-vite](https://github.com/neobuilds/mcpqa-react-vite) | public | [upgrade](apps/react-vite.md) |
+| React + Vite | [neobuilds/mcpqa-react-vite](https://github.com/neobuilds/mcpqa-react-vite) | public; transfer blocked | [upgrade](apps/react-vite.md) |
 | Next.js | [xCloudNobin/supabase-guestbook](https://github.com/xCloudNobin/supabase-guestbook) | public | [upgrade](apps/nextjs.md) |
-| TanStack Start | [neobuilds/mcpqa-tanstack-start](https://github.com/neobuilds/mcpqa-tanstack-start) | public | [upgrade](apps/tanstack-start.md) |
+| TanStack Start | [xCloudNobin/tanstack-taskboard](https://github.com/xCloudNobin/tanstack-taskboard) | public; renamed | [upgrade](apps/tanstack-start.md) |
 | Dockerfile deployment | [xCloudNobin/deploy-test-dockerfile](https://github.com/xCloudNobin/deploy-test-dockerfile) | public | [upgrade](apps/dockerfile.md) |
 | Docker Compose deployment | [xCloudNobin/deploy-test-docker-compose](https://github.com/xCloudNobin/deploy-test-docker-compose) | public | [upgrade](apps/docker-compose.md) |
 

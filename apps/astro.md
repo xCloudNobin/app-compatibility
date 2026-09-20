@@ -4,7 +4,7 @@
 - Current source: https://github.com/xCloudNobin/deploy-test-astro
 - Planned canonical repository: `xCloudNobin/deploy-test-astro`
 - Current source visibility: public
-- Initial status: **not-started; deployment not verified**
+- Status: **implementation merged; local verification recorded; live xCloud not verified**
 
 ## Implementation brief
 
@@ -23,3 +23,11 @@ Use the target-specific static/client acceptance criteria; do not add a backend 
 - [ ] Separate live xCloud qualification using the intended category before marking deployment verified.
 
 Read [ACCEPTANCE.md](../ACCEPTANCE.md) and [AGENTS.md](../AGENTS.md). Return evidence and blockers to the coordinator; do not self-merge or change repository visibility.
+
+## Delivered implementation
+
+Current source: https://github.com/xCloudNobin/deploy-test-astro
+
+Merged PR: https://github.com/xCloudNobin/deploy-test-astro/pull/1
+
+See [completion ledger](../COMPLETION.md) for outstanding qualification and ownership details.

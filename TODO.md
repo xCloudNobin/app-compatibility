@@ -1,10 +1,22 @@
 # TODO
 
+## Current status
+
+- [x] Implement all 24 canonical apps and merge their PRs.
+- [x] Record local production verification.
+- [x] Reconcile current repositories and merges in [COMPLETION.md](COMPLETION.md) and catalog.json.
+- [ ] Complete React repository transfer.
+- [ ] Run live xCloud qualification per target.
+- [ ] Run separate GitHub authentication suite.
+
+The historical per-app checkboxes below include live qualification and therefore remain open.
+
+
 ## Foundation
 
 - [x] Agree one meaningful public app per type; separate GitHub auth testing.
 - [x] Document 24 canonical targets, source inventory, shared acceptance and agent briefs.
-- [ ] Complete the three initiated transfers in MIGRATION.md; destination ownership/renaming awaits verification.
+- [ ] Complete the remaining React source transfer in MIGRATION.md; implementation is merged but destination ownership is not verified.
 - [ ] Review history/license/security and approve publication of each existing private canonical app.
 - [ ] Confirm runtime versions and supported native deployment settings before each implementation.
 
@@ -56,7 +68,12 @@ Every checkbox below means implementation AND review AND real platform qualifica
 
 ## Implementation progress
 
-- Express, Flask and Go: PR #1 in each app repository merged on 2026-09-20 after owner authorization. Local tests and production smoke checks rerun by coordinator. Live xCloud qualification remains pending; completion checkboxes above stay open.
-- Astro, Dockerfile and Docker Compose: draft PR #1 delivered in each repository; coordinator reran local checks successfully. Astro: typecheck/build, 10 unit tests and 47 browser/HTTP smoke checks. Dockerfile: 17 tests and 48 container checks. Compose: build, smoke, full-stack recreate persistence and database outage/recovery passed. Container builds required a build-only host-network workaround; Compose used the per-command default builder. Live xCloud qualification and merge remain pending.
-- Flask verification document has a stale test count (34 vs actual 35); correct in a follow-up.
+- Resume checkpoint 2026-09-20: Rails, Next.js/Supabase guestbook, and renamed TanStack Start are implemented, locally verified, and merged. React is merged in the source repository with the authorized transfer still unverified. Live xCloud qualification remains pending for all entries.
+- Rails: PR #1 merged as `f0be46be10181138a8b9bf0551843fdc7b3c8b2f`; coordinator reran `./scripts/verify.sh` with 34 tests, production Puma, DB job, login/session, CRUD, and restart persistence passing.
+- Next.js: PR #1 merged as `f1d19817a85f82dcdf807bed065c1e0874378c19`; `scripts/verify.sh` passed real Supabase/Postgres/PostgREST CRUD, validation, SSR, readiness, schema/RLS, and restart persistence. Docker app-image build was separately blocked by BuildKit registry DNS; host standalone production verification passed.
+- TanStack Start: source renamed to `xCloudNobin/tanstack-taskboard`; PR #1 merged as `3231757d1d2390bd0cb8633ed870a5dc295e9172`; `scripts/verify.sh` passed 27 checks including production SSR, health/readiness, CRUD/error cases, and SQLite restart persistence.
+- React transfer attempt remains blocked: GitHub transfer API returned `Repository has already been taken` for the authorized destination name, while owner listing does not expose `xCloudNobin/react-taskboard`; no duplicate repository was created.
 
+- Express, Flask and Go: PR #1 in each app repository merged on 2026-09-20 after owner authorization. Local tests and production smoke checks rerun by coordinator. Live xCloud qualification remains pending; completion checkboxes above stay open.
+- Astro, Dockerfile and Docker Compose: draft PR #1 delivered in each repository; coordinator reran local checks successfully. Astro: typecheck/build, 10 unit tests and 47 browser/HTTP smoke checks. Dockerfile: 17 tests and 48 container checks. Compose: build, smoke, full-stack recreate persistence and database outage/recovery passed. Container builds required a build-only host-network workaround; Compose used the per-command default builder. These PRs are now merged; live xCloud qualification remains pending.
+- Flask verification document has a stale test count (34 vs actual 35); correct in a follow-up.
