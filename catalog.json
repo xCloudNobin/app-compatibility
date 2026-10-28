@@ -365,5 +365,19 @@
     "implementation_status": "merged",
     "pull_request": "https://github.com/xCloudNobin/deploy-test-docker-compose/pull/1",
     "merge_sha": "8c0f627b38a4a08ec6c69dbae7fb620515c5bab2"
+  },
+  {
+    "id": "express-postgres",
+    "name": "Express + PostgreSQL (database-option fixture)",
+    "group": "database-option",
+    "source_repo": "neobuilds/deploy-test-express-postgres",
+    "target_repo": "xCloudNobin/deploy-test-express-postgres",
+    "action": "create",
+    "source_visibility": "public",
+    "status": "in-progress",
+    "deployment_verified": false,
+    "brief": "apps/express-postgres.md",
+    "implementation_status": "published",
+    "verification": "Config unit tests only; real PostgreSQL and live xCloud checks pending."
   }
 ]

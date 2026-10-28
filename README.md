@@ -71,6 +71,14 @@ Preserve the Next.js Supabase guestbook instead of rewriting it solely for namin
 
 ## Historical fixtures
 
+### Database-option fixtures
+
+Companion fixtures for a database option of an existing target. They don't count toward the 24 canonical apps.
+
+| Target | Current repository | Implementation | Brief |
+|---|---|---|---|
+| Express + PostgreSQL (Node site, PostgreSQL option) | [neobuilds/deploy-test-express-postgres](https://github.com/neobuilds/deploy-test-express-postgres) | Published; live qualification pending | [Brief](apps/express-postgres.md) |
+
 Duplicate Express/Astro/Next/Go QA repos are historical sources, not extra canonical apps. PostgreSQL and Supabase connectivity-only fixtures may inform integration tests but are not meaningful standalone app coverage. Evidence archives and shell-only hello-world repos are excluded. Do not delete or archive historical repositories as part of implementation.
 
 ## Evidence and security
