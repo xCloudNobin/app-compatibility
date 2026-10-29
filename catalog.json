@@ -379,5 +379,19 @@
     "brief": "apps/express-postgres.md",
     "implementation_status": "published",
     "verification": "Config unit tests only; real PostgreSQL and live xCloud checks pending."
+  },
+  {
+    "id": "prisma-postgres",
+    "name": "Prisma + PostgreSQL (database-option fixture)",
+    "group": "database-option",
+    "source_repo": "xCloudNobin/deploy-test-prisma-postgres",
+    "target_repo": "xCloudNobin/deploy-test-prisma-postgres",
+    "action": "create",
+    "source_visibility": "public",
+    "status": "local-verified",
+    "deployment_verified": false,
+    "brief": "apps/prisma-postgres.md",
+    "implementation_status": "local-only",
+    "verification": "Unit/HTTP-layer tests with a fake Prisma client only; real PostgreSQL and live xCloud checks pending."
   }
 ]
