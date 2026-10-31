@@ -1,0 +1,20 @@
+# Repositories under scanned owners that are NOT test repos. One owner/name per line.
+xCloudNobin/app-compatibility
+neobuilds/app-compatibility
+neobuilds/neo-workspace
+neobuilds/neo-hub
+neobuilds/vibe
+neobuilds/Instatic
+neobuilds/xcloud-oneclick-agent-kit
+neobuilds/xcloud-app-template-discovery
+neobuilds/anton-workspace
+neobuilds/neo-health-sync
+neobuilds/xcloud-agent-skills
+neobuilds/vultr-php
+neobuilds/hetzner-cloud-php-sdk
+neobuilds/openclaw
+neobuilds/openclaw-docker
+neobuilds/web-check
+neobuilds/personal-apps-vm-archive
+neobuilds/statamic-container
+neobuilds/emdash-container
