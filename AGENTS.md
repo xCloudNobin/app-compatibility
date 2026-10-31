@@ -12,3 +12,4 @@ This repository coordinates work; do not put application implementation here.
 - Avoid publishing internal notes or raw private evidence. Use placeholders for environment values.
 - Workers return app PR URL, commit SHA, test results, security/license notes and blockers. The coordinator updates this parent's catalog/TODO to avoid concurrent conflicting edits.
 - Repository transfers, publication and live provisioning require the owner's authorization. Nobin is handling the planned source transfers; do not perform them implicitly.
+- Every test repository is registered in FIXTURES.md, under any owner. Add its row in the same change that first uses it, then run `scripts/check-fixtures.sh` (it must pass). Never use a test repo that is not listed.
