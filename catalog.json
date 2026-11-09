@@ -393,5 +393,19 @@
     "brief": "apps/prisma-postgres.md",
     "implementation_status": "local-only",
     "verification": "Unit/HTTP-layer tests with a fake Prisma client only; real PostgreSQL and live xCloud checks pending."
+  },
+  {
+    "id": "compose-release-single-web",
+    "name": "Compose release mode: one web service and PostgreSQL",
+    "group": "release-mode",
+    "source_repo": "xCloudNobin/deploy-test-docker-compose",
+    "target_repo": "xCloudNobin/deploy-test-docker-compose",
+    "action": "upgrade",
+    "source_visibility": "public",
+    "status": "in-progress",
+    "deployment_verified": false,
+    "brief": "apps/compose-release-single-web.md",
+    "implementation_status": "pending-pr",
+    "compose_file": "compose.release.yaml"
   }
 ]
