@@ -8,6 +8,8 @@ const cwd = process.env.ECO_CWD || (env.match(/^ECO_CWD=(.+)$/m) || [])[1];
 if (cwd) app.cwd = cwd;
 if (kind === 'cluster') Object.assign(app,{exec_mode:'cluster',instances:2});
 if (kind === 'fork') Object.assign(app,{exec_mode:'fork',node_args:['--max-old-space-size=96'],max_memory_restart:'140M'});
+if (kind === 'npm') Object.assign(app,{exec_mode:'fork',script:'npm',args:'start',cwd:cwd||'apps/web',wait_ready:false});
+if (kind === 'hang') { fs.appendFileSync('/tmp/eco-config-'+process.getuid(),process.pid+'\n'); while(true){} }
 if (kind === 'fixed') app.args=['--port','31234'];
 if (kind === 'ignores') app.env.IGNORE_PORT='1';
 module.exports={apps:[app]};
