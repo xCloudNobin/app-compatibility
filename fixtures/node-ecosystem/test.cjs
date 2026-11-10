@@ -1,9 +1,10 @@
 const {test}=require('node:test'); const assert=require('node:assert/strict');
-for(const kind of ['cluster','fork','fixed','ignores']) test(kind+' ecosystem settings',()=>{
+for(const kind of ['cluster','fork','fixed','ignores','npm']) test(kind+' ecosystem settings',()=>{
  process.env.ECO_KIND=kind;process.env.PORT='43210';delete require.cache[require.resolve('../../ecosystem.config.cjs')];
  const app=require('../../ecosystem.config.cjs').apps[0];assert.equal(app.env.PORT,'43210');assert.equal(app.env.FIXTURE_VALUE,kind+'-env');
  if(kind==='cluster'){assert.equal(app.instances,2);assert.equal(app.exec_mode,'cluster');}
  if(kind==='fork'){assert.deepEqual(app.node_args,['--max-old-space-size=96']);assert.equal(app.max_memory_restart,'140M');}
+ if(kind==='npm'){assert.equal(app.script,'npm');assert.equal(app.args,'start');assert.equal(app.cwd,'apps/web');}
  if(kind==='fixed')assert.deepEqual(app.args,['--port','31234']);
  if(kind==='ignores')assert.equal(app.env.IGNORE_PORT,'1');
 });

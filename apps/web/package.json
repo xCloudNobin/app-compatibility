@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "ECO_ENTRY=apps/web node ../../fixtures/node-ecosystem/server.cjs"
+  }
+}
