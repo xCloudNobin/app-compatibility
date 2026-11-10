@@ -407,5 +407,47 @@
     "brief": "apps/compose-release-single-web.md",
     "implementation_status": "pending-pr",
     "compose_file": "compose.release.yaml"
+  },
+  {
+    "id": "node-ecosystem-cluster",
+    "name": "Node PM2 ecosystem cluster",
+    "group": "engine-qualification",
+    "source_repo": "xCloudNobin/app-compatibility",
+    "target_repo": "xCloudNobin/app-compatibility",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "local-verified",
+    "deployment_verified": false,
+    "brief": "apps/node-ecosystem-release.md",
+    "fixture_kind": "cluster",
+    "implementation_status": "in-progress"
+  },
+  {
+    "id": "node-ecosystem-fork",
+    "name": "Node PM2 ecosystem fork",
+    "group": "engine-qualification",
+    "source_repo": "xCloudNobin/app-compatibility",
+    "target_repo": "xCloudNobin/app-compatibility",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "local-verified",
+    "deployment_verified": false,
+    "brief": "apps/node-ecosystem-release.md",
+    "fixture_kind": "fork",
+    "implementation_status": "in-progress"
+  },
+  {
+    "id": "node-ecosystem-fixed",
+    "name": "Node PM2 ecosystem fixed",
+    "group": "engine-qualification",
+    "source_repo": "xCloudNobin/app-compatibility",
+    "target_repo": "xCloudNobin/app-compatibility",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "local-verified",
+    "deployment_verified": false,
+    "brief": "apps/node-ecosystem-release.md",
+    "fixture_kind": "fixed",
+    "implementation_status": "in-progress"
   }
 ]

@@ -1,0 +1,9 @@
+# Node ecosystem release engine fixtures
+
+Targeted PM2 engine fixtures in this repository (not a replacement canonical CRUD app). No dependencies or credentials. Node 22, `npm ci`, `npm test`, `npm start`. PM2 uses the root `ecosystem.config.cjs`.
+
+Set `ECO_KIND=cluster` (default), `fork`, `fixed`, or `ignores` in the site .env. Cluster starts two workers and exposes its ecosystem env value. Fork exposes that value and `--max-old-space-size=96`; inspect `max_memory_restart=140M` in pm2 jlist. The fixed case passes `--port 31234` and must be refused before release mode changes the live site. The ignores case deliberately binds 31235 and must fail the candidate health check. Bind is IPv4 loopback. `/settings` returns JSON, `/` shows the same settings; `/health` checks the process, with no external dependencies. There is no persistent data.
+
+For cluster and fork: enable release mode, commit version.json as v2 and v3, deploy each, rollback to v2, disable release mode, deploy normally. Send at least five requests/second throughout, record every non-2xx and max latency per step, inspect all live PM2 settings and verify exactly one serving slot (two workers for cluster). Test ignored PORT without moving the live slot. Clean up every created site/server/environment.
+
+Only bump `fixtures/node-ecosystem/version.json` for the visible revision; there is no build output to commit. These files deliberately model unsupported configurations for negative qualification and must be used only on disposable test sites. Deployment verification remains pending until the xCloud builder report records a tested head.
