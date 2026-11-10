@@ -1,0 +1,12 @@
+{
+  "name": "xcloud-release-ecosystem-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node fixtures/node-ecosystem/server.cjs",
+    "test": "node --test fixtures/node-ecosystem/test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
