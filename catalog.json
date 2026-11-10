@@ -434,6 +434,7 @@
     "deployment_verified": false,
     "brief": "apps/node-ecosystem-release.md",
     "fixture_kind": "fork",
+    "root_reload_fixture": "fixtures/node-ecosystem/deploy.sh",
     "implementation_status": "in-progress"
   },
   {

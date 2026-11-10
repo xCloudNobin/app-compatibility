@@ -15,3 +15,7 @@ test('the last fixture selector in .env wins, matching shell sourcing', (t)=>{
  fs.writeFileSync('.env','ECO_KIND=ignores\nECO_KIND=cluster\n');delete require.cache[require.resolve('../../ecosystem.config.cjs')];
  const app=require('../../ecosystem.config.cjs').apps[0];assert.equal(app.env.ECO_KIND,'cluster');assert.equal(app.exec_mode,'cluster');assert.equal(app.instances,2);
 });
+
+test('root js entrypoint keeps the same single app',()=>{
+ const app=require('../../ecosystem.config.js');assert.equal(app.apps.length,1);assert.deepEqual(app,require('../../ecosystem.config.cjs'));
+});
