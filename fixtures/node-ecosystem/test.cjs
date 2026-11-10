@@ -17,5 +17,6 @@ test('the last fixture selector in .env wins, matching shell sourcing', (t)=>{
 });
 
 test('root js entrypoint keeps the same single app',()=>{
- const app=require('../../ecosystem.config.js');assert.equal(app.apps.length,1);assert.deepEqual(app,require('../../ecosystem.config.cjs'));
+ process.env.PM2_PROCESS_NAME='platform-name';
+ const app=require('../../ecosystem.config.js');assert.equal(app.apps[0].name,'ecosystem-fixture');assert.equal(app.apps.length,1);assert.deepEqual(app,require('../../ecosystem.config.cjs'));
 });
