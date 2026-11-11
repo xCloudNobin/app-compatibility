@@ -1,0 +1,11 @@
+# Compose release mode: web, PostgreSQL and same-code worker
+
+This is a qualification variant of the canonical Compose taskboard, not a new app. Source: `xCloudNobin/deploy-test-docker-compose`, branch `fixture/compose-release-workers`, `compose.release-workers.yaml`. Fixture PR: https://github.com/xCloudNobin/deploy-test-docker-compose/pull/3. Leave the fixture and catalog PRs unmerged; QA can use their branches.
+
+Reuse the existing API, PostgreSQL schema, parameterized CRUD, readiness checks and named `database_data` volume. Set a disposable `POSTGRES_PASSWORD` outside git. Optional `FRONTEND_PORT` defaults to 8188; `APP_RELEASE` defaults to stage1-v1. The `website` and `queue` services use the exact same `./api` build. Only website publishes one loopback port. Queue has a separate command, no published port, no repository mount, and no dependency on the web container. It logs its image's code marker and remains running; WORKER_RELEASE follows APP_RELEASE for environment-save checks.
+
+Use a team on the Compose release allow-list with the existing release_mode flag. Prove an excluded team receives the existing refusal. Create the site, write and save project/task rows, enable release mode, deploy two visibly different code revisions, roll back, save an environment change, restart the app, back up, change data, restore, disable release mode and deploy normally. Keep at least five requests/second throughout and report every non-2xx plus maximum latency per phase; report cold backup/restore gaps separately from release switches.
+
+After every settled step: one web, one queue worker, healthy PostgreSQL, correct nginx upstream, and exact saved row IDs/values/timestamps. Compare web/queue Docker image IDs after deploy/rollback and confirm worker environment and container ID change after a saved-environment restart. A failed copy must report failure, preserve the pre-attempt row, and leave PostgreSQL restarted and healthy. Verify the release has no website alias on the live supporting network. Use only disposable lab resources and remove them afterwards.
+
+Qualification of this published fixture head is pending. Builder checks of a local derivative are not certification of this branch. Do not set deployment_verified until the exact engine and fixture commits plus traffic/persistence evidence are recorded.
