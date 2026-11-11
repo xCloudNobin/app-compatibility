@@ -450,5 +450,21 @@
     "brief": "apps/node-ecosystem-release.md",
     "fixture_kind": "fixed",
     "implementation_status": "in-progress"
+  },
+  {
+    "id": "compose-release-same-code-worker",
+    "name": "Compose release mode: web, PostgreSQL and same-code worker",
+    "group": "release-mode",
+    "source_repo": "xCloudNobin/deploy-test-docker-compose",
+    "target_repo": "xCloudNobin/deploy-test-docker-compose",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "in-progress",
+    "deployment_verified": false,
+    "brief": "apps/compose-release-workers.md",
+    "implementation_status": "pending-pr",
+    "compose_file": "compose.release-workers.yaml",
+    "fixture_branch": "fixture/compose-release-workers",
+    "pull_request": "https://github.com/xCloudNobin/deploy-test-docker-compose/pull/3"
   }
 ]
