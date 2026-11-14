@@ -65,6 +65,7 @@ Columns: **Status** is `canonical` (one of the 24 suite apps), `option` (databas
 | `xCloudNobin/BookStack` | public | Fork of BookStackApp/BookStack (made 2026-11-14 for Nobin's own MCP + zero-downtime trial); same use as the upstream row | 2026-11-14 | feature |
 | `xCloudNobin/FreshRSS` | public | Fork of FreshRSS/FreshRSS (made 2026-11-14 for Nobin's own trial) | 2026-11-14 | feature |
 | `xCloudNobin/umami` | public | Fork of umami-software/umami (made 2026-11-14 for Nobin's own trial) | 2026-11-14 | feature |
+| `neobuilds/BookStack` | public | Fork of BookStackApp/BookStack with default branch `release` (bf680915b6), so the dashboard's first analysis reads release: xCloud #10764 QA screenshot | 2026-11-14 | feature |
 | `render-examples/bun-docker` | public | Third-party Bun app with its own Dockerfile (Render example), pinned at `aa1de85f6c00d1eb03721c5f5ffbc71031fae0ed`: xCloudDev/xCloud#10226 live QA (a Bun repo keeps its own Dockerfile) | 2026-11-12 | feature |
 
 ## MCP and QA batch fixtures
