@@ -9,7 +9,7 @@
 
 A database-option regression fixture for Git Docker dockerfile deployment, not another canonical Django app. Follow [ACCEPTANCE.md](../ACCEPTANCE.md) and [AGENTS.md](../AGENTS.md); registration does not certify those acceptance checks.
 
-The upstream-style source keeps its Dockerfile under `docker/Dockerfile`. For the original Dockerfile-mode baseline, use immutable commit `29e93d12a461f6c9f7ab138af12552777cf61914`: its root Dockerfile uses `healthchecks/healthchecks:v5.0.3` with two Gunicorn workers. This is the trial revision before the custom database-mapping entrypoint; `xcloud-v503` includes that workaround and must not be substituted for the baseline.
+The upstream-style source keeps its Dockerfile under `docker/Dockerfile`. For current qualification, deploy branch `master` with `docker.dockerfile_path=docker/Dockerfile`. The historical thin Dockerfile baseline is immutable commit `29e93d12a461f6c9f7ab138af12552777cf61914`: its root Dockerfile uses `healthchecks/healthchecks:v5.0.3` with two Gunicorn workers. This is the trial revision before the custom database-mapping entrypoint. It is a source reference, not a valid `repository.branch` value (the clone path requires a branch or tag); `xcloud-v503` includes that workaround and must not be substituted for the baseline.
 
 ## Environment and runtime
 

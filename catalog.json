@@ -465,6 +465,7 @@
     "branch": "master",
     "dockerfile_baseline_ref": "29e93d12a461f6c9f7ab138af12552777cf61914",
     "implementation_status": "existing-source",
-    "verification": "Registration only; managed PostgreSQL environment propagation qualification pending."
+    "verification": "Registration only; managed PostgreSQL environment propagation qualification pending.",
+    "dockerfile_path": "docker/Dockerfile"
   }
 ]
