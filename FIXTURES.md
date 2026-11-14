@@ -50,7 +50,7 @@ Columns: **Status** is `canonical` (one of the 24 suite apps), `option` (databas
 | Repo | Visibility | Used for | Created | Status |
 |---|---|---|---|---|
 | `neobuilds/zdd-laravel-fixture` | private | xCloud #9271 zero-downtime deploys with a private deploy key | 2026-10-31 | feature |
-| `neobuilds/qa-db-laravel-rw` | public | Laravel database read/write QA | 2026-10-25 | feature |
+| `neobuilds/qa-db-laravel-rw` | public | Laravel database read/write QA; branch `fixture/invalid-composer-json` (2782d2def2, a broken composer.json) for xCloud deploy-failure QA (#10765) | 2026-10-25 | feature |
 | `neobuilds/qa-pg-laravel-rw` | public | Laravel + PostgreSQL read/write QA | 2026-10-25 | feature |
 | `neobuilds/qa-pg-node-rw` | public | Node + PostgreSQL read/write QA | 2026-10-25 | feature |
 | `neobuilds/qa-pg-php-rw` | public | PHP + PostgreSQL read/write QA | 2026-10-25 | feature |
@@ -64,6 +64,7 @@ Columns: **Status** is `canonical` (one of the 24 suite apps), `option` (databas
 | `BookStackApp/BookStack` | public | Third-party Laravel app that ships a dev docker-compose.yml, branch `release` pinned at `bf680915b6dbaf93eee5234ec72dc33bc5abafbf`: xCloud git.detect QA (Laravel + compose stays native, MySQL from DB_* without DB_CONNECTION, web_root public, committed public/dist skips npm); friction 01M7D2JASRWPF9KWHDF3JEF745 | 2026-11-14 | feature |
 | `xCloudNobin/BookStack` | public | Fork of BookStackApp/BookStack (made 2026-11-14 for Nobin's own MCP + zero-downtime trial); same use as the upstream row | 2026-11-14 | feature |
 | `xCloudNobin/FreshRSS` | public | Fork of FreshRSS/FreshRSS (made 2026-11-14 for Nobin's own trial) | 2026-11-14 | feature |
+| `xCloudNobin/umami` | public | Fork of umami-software/umami (made 2026-11-14 for Nobin's own trial) | 2026-11-14 | feature |
 | `render-examples/bun-docker` | public | Third-party Bun app with its own Dockerfile (Render example), pinned at `aa1de85f6c00d1eb03721c5f5ffbc71031fae0ed`: xCloudDev/xCloud#10226 live QA (a Bun repo keeps its own Dockerfile) | 2026-11-12 | feature |
 
 ## MCP and QA batch fixtures
