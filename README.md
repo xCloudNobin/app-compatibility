@@ -23,6 +23,7 @@ This is the **parent documentation and coordination repository**, not a monorepo
 4. [Agent instructions](AGENTS.md) and [copyable task prompt](AGENT-TASK.md).
 5. [Migration and publication checklist](MIGRATION.md).
 6. [Separate GitHub authentication tests](AUTH-TESTS.md).
+7. [Test repository registry](FIXTURES.md): every test repo under any owner, checked by `scripts/check-fixtures.sh`.
 
 ## Inventory
 
