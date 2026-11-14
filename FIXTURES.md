@@ -54,6 +54,13 @@ Columns: **Status** is `canonical` (one of the 24 suite apps), `option` (databas
 | `neobuilds/qa-pg-laravel-rw` | public | Laravel + PostgreSQL read/write QA | 2026-10-25 | feature |
 | `neobuilds/qa-pg-node-rw` | public | Node + PostgreSQL read/write QA | 2026-10-25 | feature |
 | `neobuilds/qa-pg-php-rw` | public | PHP + PostgreSQL read/write QA | 2026-10-25 | feature |
+| `neobuilds/deploy-test-bun` | public | Bun app recipe QA (bunfig.toml marker, no lockfile), xCloud #8803 | 2026-11-02 | feature |
+| `neobuilds/deploy-test-bun-noentry` | public | Bun app with no entry file, xCloud #9496 verify | 2026-11-02 | feature |
+| `neobuilds/deploy-test-flask` | public | Flask app recipe QA, xCloud #8803 R3 | 2026-11-02 | feature |
+| `neobuilds/deploy-test-go` | public | Go app recipe QA, xCloud #8803 R3 | 2026-11-02 | feature |
+| `neobuilds/deploy-test-go-nomain` | public | Go app with no main package, xCloud #8803 R3 | 2026-11-02 | feature |
+| `neobuilds/deploy-test-java` | public | Java app recipe QA, xCloud #8803 R3 | 2026-11-02 | feature |
+| `neobuilds/deploy-test-spring-boot` | public | Spring Boot app recipe QA, xCloud #8803 R3 | 2026-11-02 | feature |
 | `render-examples/bun-docker` | public | Third-party Bun app with its own Dockerfile (Render example), pinned at `aa1de85f6c00d1eb03721c5f5ffbc71031fae0ed`: xCloudDev/xCloud#10226 live QA (a Bun repo keeps its own Dockerfile) | 2026-11-12 | feature |
 
 ## MCP and QA batch fixtures
