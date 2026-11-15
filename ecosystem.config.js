@@ -6,7 +6,7 @@ const path = require("path");
 // Variants, read from the environment (release mode loads the site .env first):
 // MULTI_NO_OVERRIDE=1 adds env-cmd's --no-override; MULTI_ONLY_WEB=1 keeps only multi-web.
 const cwd = path.join(__dirname, "web");
-const envCmd = (file) => (process.env.MULTI_NO_OVERRIDE === "1" ? "--no-override " : "") + "-f ../.env node " + file;
+const envCmd = (file) => "--no-override " + "-f ../.env node " + file;
 
 const base = {
   cwd,
@@ -19,7 +19,7 @@ const base = {
 };
 
 const apps = [
-  { ...base, name: "multi-web", args: envCmd("main.js"), max_memory_restart: "300M" },
+  { ...base, name: "multi-web", script: path.join(__dirname, "web", "main.js"), interpreter: "node", args: [], exec_mode: "cluster", instances: 2, max_memory_restart: "300M" },
   { ...base, name: "multi-queue", args: envCmd("workers/queue-worker.js"), max_memory_restart: "150M" },
   { ...base, name: "multi-cron", args: envCmd("workers/cron-worker.js"), max_memory_restart: "150M" },
 ];
