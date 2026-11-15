@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm --prefix web install --omit=dev --no-audit --no-fund",
     "start": "pm2 start ecosystem.config.js"
   },
   "engines": {
     "node": ">=22"
+  },
+  "dependencies": {
+    "env-cmd": "10.1.0"
   }
 }
