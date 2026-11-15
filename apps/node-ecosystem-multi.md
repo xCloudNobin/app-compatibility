@@ -2,7 +2,7 @@
 
 Branch `fixture/node-ecosystem-multi` of this repository. The root `ecosystem.config.js` has three apps with the same code and the same `cwd: web`: `multi-web` (HTTP, reads `process.env.PORT`, binds 127.0.0.1), `multi-queue` (long-running worker, no port) and `multi-cron` (in-process cron, one run every 10 s on the clock). Each starts as `node_modules/.bin/env-cmd -f ../.env node <file>` with `interpreter: none`. No credentials and no external services. Node 22; the root `npm install` installs `web/` through `postinstall`.
 
-Without `--no-override`, env-cmd replaces the slot's PORT with the PORT in the site `.env`. Set `MULTI_NO_OVERRIDE=1` in the deploy shell (or edit the args) to add `--no-override`.
+Without `--no-override`, env-cmd replaces the slot's PORT with the PORT in the site `.env`. Variants, set in the site `.env` (release mode loads it before it reads the file): `MULTI_NO_OVERRIDE=1` adds `--no-override`; `MULTI_ONLY_WEB=1` keeps only `multi-web` (the one-app case).
 
 `multi-queue` and `multi-cron` append `<ISO time> <kind> <pid> <version> <dir>` to `$HOME/multi-fixture-runs.log`, outside the release tree. Two lines for the same 10 s cron slot mean two cron workers ran at once (overlap). Change `web/version.json` to mark a release.
 
