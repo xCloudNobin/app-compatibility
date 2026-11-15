@@ -450,5 +450,20 @@
     "brief": "apps/node-ecosystem-release.md",
     "fixture_kind": "fixed",
     "implementation_status": "in-progress"
+  },
+  {
+    "id": "node-ecosystem-multi",
+    "name": "Node PM2 ecosystem with web and workers",
+    "group": "engine-qualification",
+    "source_repo": "xCloudNobin/app-compatibility",
+    "source_ref": "fixture/node-ecosystem-multi",
+    "target_repo": "xCloudNobin/app-compatibility",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "local-verified",
+    "deployment_verified": false,
+    "brief": "apps/node-ecosystem-multi.md",
+    "fixture_kind": "multi-app",
+    "implementation_status": "in-progress"
   }
 ]
