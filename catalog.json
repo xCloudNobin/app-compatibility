@@ -450,5 +450,37 @@
     "brief": "apps/node-ecosystem-release.md",
     "fixture_kind": "fixed",
     "implementation_status": "in-progress"
+  },
+  {
+    "id": "bun-docker",
+    "name": "Bun with its own Dockerfile (third-party detection fixture)",
+    "group": "detection-qualification",
+    "source_repo": "render-examples/bun-docker",
+    "target_repo": "render-examples/bun-docker",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "in-progress",
+    "deployment_verified": false,
+    "brief": "apps/bun-docker.md",
+    "fixture_kind": "bun-dockerfile-no-compose",
+    "pinned_commit": "aa1de85f6c00d1eb03721c5f5ffbc71031fae0ed",
+    "implementation_status": "published",
+    "verification": "Third-party repo used as-is at the pinned commit. Expected: Node.js site, recommended_flow container, /git/auto keeps the repo Dockerfile (xCloudDev/xCloud#10226)."
+  },
+  {
+    "id": "laravel-bun-frontend",
+    "name": "Laravel 13 with a bun.lock frontend and a Dockerfile (third-party detection fixture)",
+    "group": "detection-qualification",
+    "source_repo": "victor-falcon/plain-week",
+    "target_repo": "victor-falcon/plain-week",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "in-progress",
+    "deployment_verified": false,
+    "brief": "apps/laravel-bun-frontend.md",
+    "fixture_kind": "laravel-bun-lock-dockerfile-no-root-compose",
+    "pinned_commit": "8fcc287d14e09e34bda14b2320435c74c5a0b1fc",
+    "implementation_status": "published",
+    "verification": "Third-party repo used as-is at the pinned commit. Expected: site type laravel, recommended_flow native, frontend build runs (xCloudDev/xCloud#10226)."
   }
 ]
