@@ -55,6 +55,14 @@ Columns: **Status** is `canonical` (one of the 24 suite apps), `option` (databas
 | `neobuilds/qa-pg-node-rw` | public | Node + PostgreSQL read/write QA | 2026-10-25 | feature |
 | `neobuilds/qa-pg-php-rw` | public | PHP + PostgreSQL read/write QA | 2026-10-25 | feature |
 
+## Archived fixtures
+
+Synthetic archives stored inside source repositories; these are not deployable apps or standalone repositories.
+
+| Repo | Visibility | Archive and consuming test | Purpose |
+|---|---|---|---|
+| `xCloudDev/xCloud` | private | [PR #9801](https://github.com/xCloudDev/xCloud/pull/9801): `tests/Fixtures/cpanel/cpmove-hardlinks.tar.gz` (578 bytes); `tests/Feature/ServerMigration/CpanelHardLinkArchiveTest.php` | Synthetic cPanel archive, no customer data: extraction preserves hard links; stock `cp -Pr` breaks them so destination files have nlink 1. Rerun if the copy starts preserving links. |
+
 ## MCP and QA batch fixtures
 
 | Repo | Visibility | Used for | Created | Status |
