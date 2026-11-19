@@ -80,6 +80,15 @@ Companion fixtures for a database option of an existing target. They don't count
 | Express + PostgreSQL (Node site, PostgreSQL option) | [neobuilds/deploy-test-express-postgres](https://github.com/neobuilds/deploy-test-express-postgres) | Published; live qualification pending | [Brief](apps/express-postgres.md) |
 | Prisma + PostgreSQL (Node site, PostgreSQL option, ORM migrations) | `xCloudNobin/deploy-test-prisma-postgres` (not yet published) | Local-verified; live qualification pending | [Brief](apps/prisma-postgres.md) |
 
+### Detection fixtures (third-party, pinned)
+
+Public third-party repositories used as-is at a pinned commit to qualify deploy detection. They don't count toward the 24 canonical apps.
+
+| Target | Repository @ pinned commit | Status | Brief |
+|---|---|---|---|
+| Bun with its own Dockerfile (container flow keeps the repo Dockerfile) | [render-examples/bun-docker](https://github.com/render-examples/bun-docker) @ `aa1de85f6c` | Registered; live qualification pending | [Brief](apps/bun-docker.md) |
+| Laravel 13 + bun.lock frontend + Dockerfile (stays native Laravel) | [victor-falcon/plain-week](https://github.com/victor-falcon/plain-week) @ `8fcc287d14` | Registered; live qualification pending | [Brief](apps/laravel-bun-frontend.md) |
+
 Duplicate Express/Astro/Next/Go QA repos are historical sources, not extra canonical apps. PostgreSQL and Supabase connectivity-only fixtures may inform integration tests but are not meaningful standalone app coverage. Evidence archives and shell-only hello-world repos are excluded. Do not delete or archive historical repositories as part of implementation.
 
 ## Evidence and security
