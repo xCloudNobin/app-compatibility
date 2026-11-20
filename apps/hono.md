@@ -31,3 +31,22 @@ Current source: https://github.com/xCloudNobin/deploy-test-hono
 Merged PR: https://github.com/xCloudNobin/deploy-test-hono/pull/1
 
 See [completion ledger](../COMPLETION.md) for outstanding qualification and ownership details.
+
+## Live xCloud qualification (2026-11-20)
+
+- Candidate commit: `84e105b85bdd6d9b52ea40ef5047be990aaa2bf3` (`main`).
+- Category: **Deploy via Git > Node.js (SSR, PM2)**. xCloud `dev` at `324be14f2ebeaf4fe64ba3f2e1c14368feb9db3c` on the xcdev lab (Incus control plane).
+- Server: lab VM, xCloud Nginx stack, Ubuntu 24.04, MySQL 8 (unused by this app).
+- Created over the Public API with a personal access token, every field explicit (no repository detection): `POST /api/v1/servers/{server}/sites/git/auto` with `site_type: nodejs`, `deploy_mode: native`, `serving_mode: ssr`, `package_manager: npm`, `build_command: `npm run build``, `start_command: `npm start``, `port`, `web_root: public` and a one-line deploy script. No environment variables.
+- Go-live the way a customer adds a domain: deploy on the staging name, point the domain's A record at the server, then `PUT /api/v1/sites/{site}/domain {ssl_provider: xcloud}`.
+
+| Check | Result |
+|---|---|
+| Create over the Public API | 202; first deploy live on the staging name in 30 s |
+| HTTPS on its own domain | Let's Encrypt certificate (SAN = the site's domain) 208 s after the create call, including the domain change; strict `curl` 200; HTTP redirects to HTTPS |
+| Page | "Hono Taskboard" with projects and tasks; `/api/health/ready` 200 `{"status":"ready","db":"sqlite"}` |
+| Redeploy (`POST /sites/{site}/git/deploy`), twice | Done in 21 s and 17 s; a record created before the redeploy was still there after it; page and readiness still 200 over HTTPS |
+
+Evidence (redacted screenshot):
+
+- [Live page over HTTPS](https://xclab-evidence.tmp1.dev/lab-xl-factory/q-cat-e2-1120/20261120/0ee5cc51b2dcce2aee30fd7b71c5da77/hono-live.png)

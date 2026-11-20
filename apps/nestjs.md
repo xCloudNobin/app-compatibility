@@ -31,3 +31,22 @@ Current source: https://github.com/xCloudNobin/deploy-test-nestjs
 Merged PR: https://github.com/xCloudNobin/deploy-test-nestjs/pull/1
 
 See [completion ledger](../COMPLETION.md) for outstanding qualification and ownership details.
+
+## Live xCloud qualification (2026-11-20)
+
+- Candidate commit: `5ab983903affc0d043946e17d8874fe938826bce` (`main`).
+- Category: **Deploy via Git > Node.js (SSR, PM2)**. xCloud `dev` at `324be14f2ebeaf4fe64ba3f2e1c14368feb9db3c` on the xcdev lab (Incus control plane).
+- Server: lab VM, xCloud Nginx stack, Ubuntu 24.04, MySQL 8 (unused by this app).
+- Created over the Public API with a personal access token, every field explicit (no repository detection): `POST /api/v1/servers/{server}/sites/git/auto` with `site_type: nodejs`, `deploy_mode: native`, `serving_mode: ssr`, `package_manager: npm`, `build_command: `npm run build``, `start_command: `npm start``, `port`, `web_root: public` and a one-line deploy script. No environment variables.
+- Go-live the way a customer adds a domain: deploy on the staging name, point the domain's A record at the server, then `PUT /api/v1/sites/{site}/domain {ssl_provider: xcloud}`.
+
+| Check | Result |
+|---|---|
+| Create over the Public API | 202; first deploy live on the staging name in 51 s |
+| HTTPS on its own domain | Let's Encrypt certificate (SAN = the site's domain) 263 s after the create call, including the domain change; strict `curl` 200; HTTP redirects to HTTPS |
+| Page | "NestJS Taskboard" with projects and tasks; `/api/health/ready` 200 `{"status":"ready","database":"up"}` |
+| Redeploy (`POST /sites/{site}/git/deploy`), twice | Done in 23 s and 20 s; a record created before the redeploy was still there after it; page and readiness still 200 over HTTPS |
+
+Evidence (redacted screenshot):
+
+- [Live page over HTTPS](https://xclab-evidence.tmp1.dev/lab-xl-factory/q-cat-e2-1120/20261120/07c23801c5cd6f2b3777b8c45a390ea7/nestjs-live.png)
