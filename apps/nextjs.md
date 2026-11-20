@@ -31,3 +31,17 @@ Current source: https://github.com/xCloudNobin/supabase-guestbook
 Merged PR: https://github.com/xCloudNobin/supabase-guestbook/pull/1
 
 See [completion ledger](../COMPLETION.md) for outstanding qualification and ownership details.
+
+## Live xCloud qualification (2026-11-20)
+
+- Candidate commit: `f1d19817a85f82dcdf807bed065c1e0874378c19` (`main`).
+- Category: **Deploy via Git > Docker Compose** (the repository's `docker-compose.yml`: the Next.js app built from its Dockerfile, plus Supabase Postgres, PostgREST and nginx), as the README documents for production. xCloud `dev` at `324be14f2ebeaf4fe64ba3f2e1c14368feb9db3c` on the xcdev lab (Incus control plane).
+- Server: lab VM, xCloud Nginx stack with Docker, Ubuntu 24.04, public IPv4.
+- Created over the Public API with a personal access token, no repository detection: `POST /api/v1/servers/{server}/sites/git/docker` with `docker: {mode: compose, compose_file: docker-compose.yml}`, `port: 8104` and a staging domain. No environment variables are needed: the compose file carries the internal settings.
+- All four containers were healthy after 114 s; the BuildKit image build had registry access on the lab server.
+- Go-live: deploy on the staging name, point the domain's A record at the server, then `PUT /api/v1/sites/{site}/domain {ssl_provider: xcloud}`. Let's Encrypt (SAN = the domain), HTTP 301 → HTTPS. Create → live: **190 s**.
+- Checks over HTTPS: `/` 200 `Supabase Guestbook` with no "Supabase setup needed" notice; `/api/ready` 200 (`db: reachable`); a `/_next/static/` chunk 200; `POST /api/messages` 201.
+- Redeploy (`POST /sites/{site}/git/deploy`, 33 s): the marker message is still listed by `/api/messages` and rendered server-side on `/`; `/api/ready` 200.
+- A native PM2 deploy of this repository is not the intended category: it has no data layer (batches C-D).
+
+Evidence (text rendered by the lab, redacted): [nextjs](https://xclab-evidence.tmp1.dev/lab-xl-factory/q-cat-g-1120/20261120/a951d2c5a7f68a774e7bd6010edeed28/nextjs-live.png)
