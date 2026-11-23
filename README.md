@@ -1,7 +1,7 @@
 # php-lock-root-gap
 
 A tiny plain-PHP app used as a deploy-detection fixture for xCloud
-(registered in [xCloudNobin/app-compatibility](https://github.com/xCloudNobin/app-compatibility)).
+(a branch fixture: branch `fixture/php-lock-root-gap` of [xCloudNobin/app-compatibility](https://github.com/xCloudNobin/app-compatibility), registered in its `catalog.json`).
 
 ## The case
 
