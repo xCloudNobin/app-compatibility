@@ -88,6 +88,7 @@ Public third-party repositories used as-is at a pinned commit to qualify deploy 
 |---|---|---|---|
 | Bun with its own Dockerfile (container flow keeps the repo Dockerfile) | [render-examples/bun-docker](https://github.com/render-examples/bun-docker) @ `aa1de85f6c` | Registered; live qualification pending | [Brief](apps/bun-docker.md) |
 | Laravel 13 + bun.lock frontend + Dockerfile (stays native Laravel) | [victor-falcon/plain-week](https://github.com/victor-falcon/plain-week) @ `8fcc287d14` | Registered; live qualification pending | [Brief](apps/laravel-bun-frontend.md) |
+| Plain PHP, root `php ~8.2.0 \|\| ^8.4` excludes the lock's 8.3 minimum (expected pick 8.4); branch fixture | [xCloudNobin/app-compatibility @ fixture/php-lock-root-gap](https://github.com/xCloudNobin/app-compatibility/tree/fixture/php-lock-root-gap) @ `38e8026e6c` | Registered; live qualification pending | [Brief](apps/php-lock-root-gap.md) |
 
 Duplicate Express/Astro/Next/Go QA repos are historical sources, not extra canonical apps. PostgreSQL and Supabase connectivity-only fixtures may inform integration tests but are not meaningful standalone app coverage. Evidence archives and shell-only hello-world repos are excluded. Do not delete or archive historical repositories as part of implementation.
 

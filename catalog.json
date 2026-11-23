@@ -482,5 +482,22 @@
     "pinned_commit": "8fcc287d14e09e34bda14b2320435c74c5a0b1fc",
     "implementation_status": "published",
     "verification": "Third-party repo used as-is at the pinned commit. Expected: site type laravel, recommended_flow native, frontend build runs (xCloudDev/xCloud#10226)."
+  },
+  {
+    "id": "php-lock-root-gap",
+    "name": "Plain PHP whose root require.php excludes the lock's minimum PHP (branch fixture)",
+    "group": "detection-qualification",
+    "source_repo": "xCloudNobin/app-compatibility",
+    "target_repo": "xCloudNobin/app-compatibility",
+    "source_branch": "fixture/php-lock-root-gap",
+    "action": "fixture",
+    "source_visibility": "public",
+    "status": "in-progress",
+    "deployment_verified": false,
+    "brief": "apps/php-lock-root-gap.md",
+    "fixture_kind": "branch-fixture-php-root-constraint-gap",
+    "pinned_commit": "38e8026e6cf34b186c7e3b657b6168738674f99a",
+    "implementation_status": "published",
+    "verification": "Branch fixture at the branch root. Root composer.json php '~8.2.0 || ^8.4' (excludes 8.3); composer.lock's only package phpunit/php-timer 8.0.0 needs php >=8.3. Expected: detection and /git/auto pick PHP 8.4 (the lowest branch every constraint allows), composer install passes, / and /health return 200 on 8.4 (xCloudDev/xCloud#11687, #11711)."
   }
 ]
