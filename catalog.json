@@ -402,8 +402,8 @@
     "target_repo": "xCloudNobin/deploy-test-docker-compose",
     "action": "upgrade",
     "source_visibility": "public",
-    "status": "in-progress",
-    "deployment_verified": false,
+    "status": "deployment-verified",
+    "deployment_verified": true,
     "brief": "apps/compose-release-single-web.md",
     "implementation_status": "pending-pr",
     "compose_file": "compose.release.yaml"
