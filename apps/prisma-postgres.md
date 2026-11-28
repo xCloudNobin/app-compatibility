@@ -1,8 +1,8 @@
 # Prisma + PostgreSQL (database-option fixture)
 
 - Action: **create**
-- Target source: `xCloudNobin/deploy-test-prisma-postgres` (not yet published)
-- Status: **local-verified** (unit/HTTP-layer tests only); real PostgreSQL and live xCloud qualification pending
+- Source: [neobuilds/deploy-test-prisma-postgres](https://github.com/neobuilds/deploy-test-prisma-postgres/tree/f1dec7212e9d0b102f3514fb95dd459e2b9bdc20) at `f1dec7212e9d0b102f3514fb95dd459e2b9bdc20`
+- Status: **deployment-verified**
 
 ## Why it exists
 
@@ -19,7 +19,14 @@ Node.js site from git, Node 22, **Database: PostgreSQL**, install `npm ci` (Pris
 ## Qualification
 
 - [x] Unit and HTTP-layer tests with a fake Prisma client (`npm test`, no database needed); `prisma validate`; migration SQL matches the schema.
-- [ ] Real PostgreSQL: `migrate deploy` on an empty database and again (idempotent), `scripts/smoke.sh` CRUD, search/filter and invalid input, `leave`/`verify` persistence across restart and redeploy, DB outage → `/ready` 503 then recovery.
-- [ ] Live xCloud deployment with the PostgreSQL option (confirms `postinstall` engine download works on the site and the role can run `migrate deploy`).
+- [x] Real PostgreSQL: `migrate deploy` on an empty database and again (idempotent), `scripts/smoke.sh` CRUD, search/filter and invalid input, `leave`/`verify` persistence across restart and redeploy, DB outage → `/ready` 503 then recovery.
+- [x] Live xCloud deployment with the PostgreSQL option (confirms `postinstall` engine download works on the site and the role can run `migrate deploy`).
 
 Read [ACCEPTANCE.md](../ACCEPTANCE.md) and [AGENTS.md](../AGENTS.md).
+
+## Live xCloud qualification (2026-11-28)
+
+- The Public API Git auto endpoint detected a Node.js site on port 3000. The server ran Node 22 and used `site_database_engine: postgresql`. With AI script generation disabled in the lab, the default install was `npm install --no-audit --no-fund` and the start command was `npm run start`. Postinstall generated Prisma Client 6.19.0. The separate clean-checkout test verified the documented `npm ci` command.
+- The first strict HTTPS 200 arrived 70.85 seconds after the create request started. `/ready` named PostgreSQL, and CRUD, search, filtering and invalid-input checks passed over HTTPS.
+- One redeploy finished in 24.58 seconds with exit 0. The todo survived and `prisma migrate deploy` reported no pending migrations. Four of 49 probes at 0.5-second intervals returned HTTP 502 during the process restart.
+- xCloud dev commit `837d4392db27e3982d1e7609a2dd81e67236387e`. [Redacted qualification evidence](https://xclab-evidence.tmp1.dev/lab-xl-factory/q-prismafix-1128/20261128/466e735cd3c917346a388bbff4a94edc/prisma-postgres-live-1128.png).
